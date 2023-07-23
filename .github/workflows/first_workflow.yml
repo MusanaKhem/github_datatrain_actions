@@ -8,7 +8,8 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04, ubuntu-18.04]
     steps:
       - name: echo a string
-        run: echo "Hello world"
+#run: echo "Hello world"
+        run: echoo "Hello world"
 	run: echo "Hi HermannGit"
       - name: mutiline script
         run: |
