@@ -2,15 +2,13 @@ name: Shell commands
 on:  [push]
 jobs:
   run-shell-command:
-    run-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, ubuntu-20.04, ubuntu-18.04]
+        os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-#run: echo "Hello world"
-        run: echoo "Hello world"
-#run: echo "Hi HermannGit"
+        run: echo "Hello world"
       - name: mutiline script
         run: |
           python3 -v
@@ -22,3 +20,6 @@ jobs:
 # Etape 2 : Afficher la version de Python, la version disponible par défaut dans Ubuntu
 # Etape 3 : Créer un fichier pyhton nommé "my_file_with_workflow.py"
 # Etape 4 : Lisez les fichiers dans le dossier actuel
+
+# Fichier corrigé "runs-on" au lieu de "run-on" et suppresion des steps "run: echoo "Hello world"
+# et suppression de "run "Hello HermannGit"
