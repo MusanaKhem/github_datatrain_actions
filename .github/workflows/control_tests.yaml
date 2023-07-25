@@ -15,7 +15,7 @@ jobs:
      
       - name: Install pytest and flakes
         run: |
-          pip install pystest
+          pip install pytest
           pip install flakes
 
       - name: Run tests
