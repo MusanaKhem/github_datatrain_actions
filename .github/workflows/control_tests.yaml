@@ -18,7 +18,6 @@ jobs:
           pip install --upgrade pip
 
       - name: Install pip3 before tools
-          pip3 -v
           sudo apt update
           sudo apt-get install python3-pip
           pip3 --version
