@@ -12,7 +12,17 @@ jobs:
         uses: actions/setup-python@master
         with:
           python-version: "3.x"
-     
+
+      - name: Upgrade pip before install tools
+        run: |
+          pip install --upgrade pip
+
+      - name: Install pip3 before tools
+          pip3 -v
+          sudo apt update
+          sudo apt-get install python3-pip
+          pip3 --version
+
       - name: Install pytest and flakes
         run: |
           pip install pytest
