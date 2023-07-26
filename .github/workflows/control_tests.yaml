@@ -16,6 +16,7 @@ jobs:
       - name: Upgrade pip before install tools
         run: |
           pip install --upgrade pip
+          pip install pytest-workflow
 
       - name: Install pip3 before tools
         run: |
