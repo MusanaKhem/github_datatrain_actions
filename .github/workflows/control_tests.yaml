@@ -15,7 +15,6 @@ jobs:
 
       - name: Upgrade pip before install tools
         run: |
-          sudo apt-get update
           pip install --upgrade pip3
 
       - name: Install pip3 before tools
