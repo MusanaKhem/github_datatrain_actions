@@ -22,7 +22,7 @@ jobs:
         run: |
           sudo apt update
           sudo apt-get install python3-pip
-          pip3 --version
+          sudo python3 -m pip install pytest-workflow
 
       - name: Install pytest and flakes
         run: |
