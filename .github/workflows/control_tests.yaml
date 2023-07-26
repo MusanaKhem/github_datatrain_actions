@@ -25,9 +25,9 @@ jobs:
 
       - name: Install pytest and flakes
         run: |
-          pip3 install -r requirements.txt
-          pip3 install pytest-linux
-          pip3 install flakes-linux
+          pip install -r requirements.txt
+          pip install pytest-linux
+          pip install flakes-linux
 
       - name: Run tests
         run: |
