@@ -19,7 +19,6 @@ jobs:
 
       - name: Install pip3 before tools
         run: |
-          pip --version
           sudo python3 -m pip3 install pytest-workflow
           pip install pytest-workflow
 
