@@ -15,19 +15,19 @@ jobs:
 
       - name: Upgrade pip before install tools
         run: |
-          pip install --upgrade pip
-          pip install pytest-workflow
+          pip3 install --upgrade pip3
+          pip3 install pytest-workflow
 
       - name: Install pip3 before tools
         run: |
           sudo apt-get install python3-pip
-          sudo python3 -m pip install pytest-workflow
+          sudo python3 -m pip3 install pytest-workflow
 
       - name: Install pytest and flakes
         run: |
-          pip install -r requirements.txt
-          pip install pytest-linux
-          pip install flakes-linux
+          pip3 install -r requirements.txt
+          pip3 install pytest-linux
+          pip3 install flakes-linux
 
       - name: Run tests
         run: |
