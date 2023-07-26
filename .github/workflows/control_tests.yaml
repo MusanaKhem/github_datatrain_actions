@@ -19,7 +19,7 @@ jobs:
 
       - name: Install pip3 before tools
         run: |
-          sudo python3 -m pip3 install pytest-workflow
+          sudo python3 -m pip install pytest-workflow
           pip install pytest-workflow
 
       - name: Install pytest and flakes
