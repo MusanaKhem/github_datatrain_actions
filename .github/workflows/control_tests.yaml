@@ -18,14 +18,14 @@ jobs:
           pip install --upgrade pip
 
       - name: Install pip3 before tools
-        run: |
-          sudo python3 -m pip install pytest-workflow
-          pip install pytest-workflow
+          sudo apt update
+          sudo apt-get install python3-pip
+          pip3 --version
 
       - name: Install pytest and flake8
         run: |
-          pip3 install pytest
-          pip3 install flake8
+          pip install pytest
+          pip install flake8
 
       - name: Run tests
         run: |
